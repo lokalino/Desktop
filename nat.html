@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jankovica banka</title>
+    <link rel="stylesheet" href="./nat.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jankovica banka</h1>
+        </header>
+
+        <main>
+            <section id="balance">
+                <h2>Stanje na računu</h2>
+                <p id="balance-amount">$0.00</p>
+            </section>
+
+            <section id="transaction">
+                <h2>Transakcija</h2>
+                <form id="transaction-form">
+                    <input type="radio" id="deposit" name="transaction-type" value="deposit" checked>
+                    <label for="deposit">Depozit</label>
+                    <input type="radio" id="withdraw" name="transaction-type" value="withdraw">
+                    <label for="withdraw">Isplata</label>
+                    <input type="number" id="amount" name="amount" placeholder="Iznos">
+                    <button type="submit">Izvrši</button>
+                </form>
+            </section>
+
+            <section id="exchange">
+                <h2>Menjačnica</h2>
+                <form id="exchange-form">
+                    <label for="currency">Izaberite valutu:</label>
+                    <select id="currency" name="currency">
+                        <option value="eur">EUR</option>
+                        <option value="din">DIN</option>
+                        <option value="biticon">BITICON</option>
+                    </select>
+                    <input type="number" id="amount-exchange" name="amount" placeholder="Iznos">
+                    <button type="submit">Konvertuj</button>
+                </form>
+            </section>
+
+            <section id="account">
+                <h2>Otvaranje računa</h2>
+                <form id="account-form">
+                    <input type="text" id="name" name="name" placeholder="Ime i prezime">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="tel" id="phone" name="phone" placeholder="Telefon">
+                    <button type="submit">Otvori račun</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Jankovica Banka</p>
+        </footer>
+    </div>
+
+    <script src="./nat.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./Fondo-original-minimalista.jpg.webp');
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4d1818;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #696093;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+form input[type="number"],
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form button,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transaction-list li {
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #333;
+}

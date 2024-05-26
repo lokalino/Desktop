@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava Jankovica Banka</title>
+    <link rel="stylesheet" href="./nat1.css">
+    <style>
+        #datetime {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prijava "Jankovica Banka"</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Korisničko ime:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Lozinka:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Prijavi se</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+        <section id="register">
+            <h2>Registracija</h2>
+            <form id="register-form">
+                <input type="text" id="reg-username" name="reg-username" placeholder="Korisničko ime" required>
+                <input type="password" id="reg-password" name="reg-password" placeholder="Lozinka" required>
+                <input type="text" id="reg-name" name="reg-name" placeholder="Ime i prezime" required>
+                <input type="email" id="reg-email" name="reg-email" placeholder="Email" required>
+                <input type="tel" id="reg-phone" name="reg-phone" placeholder="Telefon" required>
+                <button type="submit">Registruj se</button>
+            </form>
+        </section>
+        <div id="datetime"></div>
+    </div>
+
+    <script src="./nat1.js"></script>
+    <script>
+        function displayDateTime() {
+            let now = new Date();
+            let date = now.toDateString();
+            let time = now.toLocaleTimeString();
+
+            let dateTimeString = "Trenutno vreme: " + date + ' ' + time;
+            document.getElementById('datetime').innerText = dateTimeString;
+        }
+        setInterval(displayDateTime, 1000);
+        displayDateTime();
+    </script>
+</body>
+</html>
